@@ -27,7 +27,7 @@ export default function useIdle({
         timeout: 10000,
         onIdle: handleOnIdle,
         debounce: 500,
-        promptBeforeIdle: 4000,
+        promptBeforeIdle: 5000,
         onPrompt: handleShowModal,
         startManually: true
     })

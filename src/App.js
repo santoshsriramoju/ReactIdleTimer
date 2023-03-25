@@ -35,19 +35,19 @@ const App = () => {
 
   const handleClose = () => {
     dispatch(hideModal());
-    logout();
+    navigate("/");
   }
 
   const handleSave = () => {
     dispatch(hideModal());
-    idleTimer.reset();
+    idleTimer.start();
   }
 
   const startTimer = () => {
     idleTimer.start();
   }
 
-   const pauseTimer = () => {
+  const pauseTimer = () => {
     idleTimer.pause();
   }
 
